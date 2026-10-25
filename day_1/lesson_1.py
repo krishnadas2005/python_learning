@@ -1,3 +1,5 @@
 name = input("Enter your name: ")
 print("hello",name )
 print("i started learning python")
+goal = input("Enter your goal: ")
+print ("youwant to become a ", goal)
