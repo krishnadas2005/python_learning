@@ -1,6 +1,5 @@
 import random
 
-
 def play_game():
     secret_number = random.randint(0, 10)
     player_guess = int(input("Enter a number between 0 and 10: "))
