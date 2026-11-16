@@ -11,7 +11,11 @@ def menu():
         print("2. View all notes")
         print("3. Exit")
 
-        choice = int(input("Choose any one option from (1/2/3): "))
+        try:
+            choice = int(input("Choose any one option from (1/2/3): "))
+        except ValueError:
+            print("Enter a vsaild input from (1/2/3): ")
+            continue
 
         if choice == 1:
             note = input("Enter your note: ")
@@ -30,7 +34,7 @@ def menu():
                 if contents.strip() == "":
                     print("Your file is empty.")
                 else:
-                    print("\n______Your Notes______")
+                    print("\n______Your Notes______ \n")
                     print(contents)
 
             except FileNotFoundError:
